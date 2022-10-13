@@ -965,7 +965,7 @@
     font-size: 13px;
     line-height: 16px;
     height: 16px;
-    color: rgba(255, 255, 255, 0.66);
+    color: black;
     margin-bottom: 10px;
   }
   
@@ -1002,7 +1002,7 @@
     align-items: center;
     font-family: Helvetica Neue, sans-serif;
     font-size: 14px;
-    color: #ffffff;
+    color: #000000;
     padding: 0px 20px;
     height: 100%;
     width: 100%;
