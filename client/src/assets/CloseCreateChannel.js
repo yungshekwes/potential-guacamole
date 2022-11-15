@@ -1,5 +1,11 @@
+/**
+ * Imports from packages that will be used in the file
+ */
 import React from 'react';
 
+/**
+ * This is the stylization of the closing of the Creating Channel implementation in the AvoChat app
+ */
 export const CloseCreateChannel = ({ setIsCreating, setIsEditing }) => (
   <svg
     width='32'

@@ -1,5 +1,11 @@
+/**
+ * Imports from packages that will be used in the file
+ */
 import React from 'react';
 
+/**
+ * This is the Invite stylization that is implemented in the AvoChat app
+ */
 export const InviteIcon = () => (
   <div style={{ marginLeft: '2px' }}>
     <svg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'>

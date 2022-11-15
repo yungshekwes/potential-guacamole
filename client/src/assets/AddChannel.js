@@ -1,5 +1,11 @@
+/**
+ * Imports from packages that will be used in the file
+ */
 import React from 'react';
 
+/**
+ * This is the Add Channel stylization that is implemented in the AvoChat app
+ */
 export const AddChannel = ({ setCreateType, setIsCreating, setIsEditing, setToggleContainer, type }) => (
   <svg
     width='14'

@@ -1,14 +1,42 @@
+/**
+ * Importing constant connect from getStream Package
+ * This is for connecting to the getStream API and allow messaging functionality
+ */
 const {connect} = require('getstream')
+
+/**
+ * Importing constant bcrypt from bcrypt Package
+ * This is for hashing passwords to provide privacy for users while also maintaining a level of security
+ */
 const bcrypt = require('bcrypt')
+
+/**
+ * Constant StreamChat is required to be defined as given by the documentation of getStream
+ */
 const StreamChat = require('stream-chat').StreamChat
+
+/**
+ * Importing constant crypto from crypto package
+ * This is used with bcrypt to hash and therefore encrypt passwords
+ */
 const crypto = require('crypto')
 
+/**
+ * This allows the usage of "hidden" keys that will not be visible in Github when committed
+ */
 require('dotenv').config()
 
+/**
+ * These are keys, app id's and secrets required for the StreamChat client to connect and work properly
+ */
 const api_key = process.env.STREAM_API_KEY
 const api_secret = process.env.STREAM_API_SECRET
 const app_id = process.env.STREAM_APP_ID
 
+/**
+ * This is an asynchronous function in the form of a constant that encapsulates the logic
+ * for signing up as a new user in AvoChat
+ */
 const signup = async (req, res) => {
   try {
     const {fullName, username, password, phoneNumber} = req.body
@@ -29,6 +57,10 @@ const signup = async (req, res) => {
   }
 }
 
+/**
+ * This is an asynchronous function in the form of a constant that encapsulates the logic
+ * for logging in as an existing user in AvoChat
+ */
 const login = async (req, res) => {
   try {
     const {username, password} = req.body
@@ -55,4 +87,8 @@ const login = async (req, res) => {
   }
 }
 
+/**
+ * Exporting the constants signup and login so that the other auth.js file in the 
+ * Routes directory can call them when needed
+ */
 module.exports = {signup, login}

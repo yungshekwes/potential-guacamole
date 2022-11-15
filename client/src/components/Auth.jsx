@@ -56,7 +56,7 @@ const Auth = () => {
     <div className='auth__form-container'>
       <div className='auth__form-container_fields'>
         <div className='auth__form-container_fields-content'>
-          <p>{isSignup ? 'Sign Up' : 'Sign In'}</p>
+          <p>{isSignup ? 'Sign Up for AvoChat' : 'Welcome back to AvoChat'}</p>
           <form onSubmit={handleSubmit}>
             {isSignup && (
               <div className='auth__form-container_fields-content_input'>

@@ -1,5 +1,11 @@
+/**
+ * Imports from packages that will be used in the file
+ */
 import React from 'react';
 
+/**
+ * This is the Search Icon stylization that is implemented in the AvoChat app
+ */
 export const SearchIcon = () => (
   <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'>
     <path
