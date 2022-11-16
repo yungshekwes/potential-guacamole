@@ -4,6 +4,8 @@
 
 Look at the name of the repository ;)
 
+<img src="C:\Users\Abhishek Kumar\Downloads\avochat.png" style="zoom:33%;" />
+
 ## How do I run this locally?
 
 We are assuming that Node.js, the open-source and cross-platform Javascript runtime environment is installed in your computer. If it is not installed, please follow this [link to install Node.js](https://nodejs.org/en/) first before continuing onto the next steps.
