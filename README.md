@@ -2,7 +2,7 @@
 
 ## First, why is it called AvoChat?
 
-Look at the name of the repository ;)
+Look at the name of the repository :)
 
 ## How do I run this locally?
 
