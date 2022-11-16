@@ -4,7 +4,7 @@
 
 Look at the name of the repository ;)
 
-<img src="https://www.clipartmax.com/png/middle/186-1861398_half-avocado-free-icon-avocado-vector-black-and-white-png.png" style="zoom:33%;" />
+<img src="https://www.clipartmax.com/png/middle/186-1861398_half-avocado-free-icon-avocado-vector-black-and-white-png.png" style="zoom: 25%;" />
 
 ## How do I run this locally?
 
