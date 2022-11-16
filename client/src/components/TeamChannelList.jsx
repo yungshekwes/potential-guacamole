@@ -1,7 +1,18 @@
+/**
+ * Imports from packages that will be used in the file
+ */
 import React from 'react'
 
+/**
+ * Importing components from Assets directory for the stylization of the Team Channel List
+ */
 import {AddChannel} from '../assets'
 
+/**
+ * Implements the logic behind the Team Channel and Direct Message Channel list components
+ * Showcases to a user the Channels that are currently available, and in the case that there is an error 
+ * (due to internet connection being lost, for example), the component dynamically updates to show an error message
+ */
 const TeamChannelList = ({children, error = false, loading, type, isCreating, setIsCreating, setCreateType, setIsEditing, setToggle}) => {
   if (error) {
     return type === 'team' ? (

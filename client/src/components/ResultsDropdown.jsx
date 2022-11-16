@@ -1,6 +1,12 @@
+/**
+ * Imports from packages that will be used in the file
+ */
 import React from 'react';
 import { Avatar, useChatContext } from 'stream-chat-react';
 
+/**
+ * Component that implements the logic of retrieving the Channels (Direct Messages and Team) that a user is a member of
+ */
 const channelByUser = async ({ client, setActiveChannel, channel, setChannel }) => {
   const filters = {
     type: 'messaging',
@@ -19,6 +25,10 @@ const channelByUser = async ({ client, setActiveChannel, channel, setChannel }) 
   return setActiveChannel(newChannel);
 };
 
+
+/**
+ * Implements the stylization for the search results to be shown in the dropdown menu of the Search bar in AvoChat 
+ */
 const SearchResult = ({ channel, focusedId, type, setChannel, setToggleContainer }) => {
   const { client, setActiveChannel } = useChatContext();
 
@@ -57,6 +67,10 @@ const SearchResult = ({ channel, focusedId, type, setChannel, setToggleContainer
   );
 };
 
+/**
+ * Actual implementation of the Results Dropdown component that makes use of the both the logic and stylization components above
+ * to produce optimal behaviour when searching for a Direct Message or Team Channel.
+ */
 const ResultsDropdown = ({ teamChannels, directChannels, focusedId, loading, setChannel, setToggleContainer }) => {
 
   return (

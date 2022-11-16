@@ -1,4 +1,5 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# .gitignore is necessary so that we do not push unnecessary files to github, such as the entire node_modules folder.
 
 # dependencies
 /node_modules

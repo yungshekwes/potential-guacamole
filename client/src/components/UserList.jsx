@@ -1,8 +1,17 @@
+/**
+ * Imports from packages that will be used in the file
+ */
 import React, {useEffect, useState} from 'react'
 import {Avatar, useChatContext} from 'stream-chat-react'
 
+/**
+ * Importing components from Assets directory for the stylization of the User List
+ */
 import { InviteIcon } from '../assets'
 
+/**
+ * Stylization component for User List
+ */
 const ListContainer = ({children}) => {
   return (
     <div className='user-list__container'>
@@ -15,6 +24,9 @@ const ListContainer = ({children}) => {
   )
 }
 
+/**
+ * Stylization component for each user in the User List, along with a clickable invite icon
+ */
 const UserItem = ({user, setSelectedUsers}) => {
   const [selected, setSelected] = useState(false)
 
@@ -41,6 +53,11 @@ const UserItem = ({user, setSelectedUsers}) => {
   )
 }
 
+/**
+ * Actual User List logic implementation that is used when a user wants to invite other members to their existing Team Channel
+ * Makes use of the stylization components above, along with actually displaying the available users that the current user
+ * can possible invite to their Team Channel.
+ */
 const UserList = ({setSelectedUsers}) => {
   const {client} = useChatContext()
   const [users, setUsers] = useState([])

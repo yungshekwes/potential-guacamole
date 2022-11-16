@@ -1,9 +1,24 @@
-import React, {useState} from 'react'
-import {useChatContext} from 'stream-chat-react'
+/**
+ * Imports from packages that will be used in the file
+ */
+import React, { useState } from 'react'
+import { useChatContext } from 'stream-chat-react'
 
+/**
+ * Import from the Components directory that will be used in the Edit Channel component
+ */
 import { UserList } from './'
+
+/**
+ * Importing components from Assets directory for the stylization of the Closing Icon for Editing Channels
+ */
 import { CloseCreateChannel } from '../assets'
 
+/**
+ * Component that implements logic for accepting the input of a Channel Name
+ * This will be used in the Edit Channel component below
+ * Exactly the same as that in the CreateChannel.jsx file
+ */
 const ChannelNameInput = ({channelName = '', setChannelName}) => {
   const handleChange = (e) => {
     e.preventDefault()
@@ -19,8 +34,13 @@ const ChannelNameInput = ({channelName = '', setChannelName}) => {
   )
 }
 
+/**
+ * Actual implementation of the Edit Channel logic that allows the editing of a existing channel, wherein users can be added
+ * and the Team Channel name can be changed.
+ * Pretty similar to the CreateChannel logic.
+ */
 const EditChannel = ({setIsEditing}) => {
-  const {channel} = useChatContext()
+  const { channel } = useChatContext()
   const [channelName, setChannelName] = useState(channel?.data?.name)
   const [selectedUsers, setSelectedUsers] = useState([])
 

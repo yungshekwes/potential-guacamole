@@ -1,11 +1,23 @@
+/**
+ * Imports from packages that will be used in the file
+ */
 import React, {useState} from 'react'
 import Cookies from 'universal-cookie'
 import axios from 'axios'
 
+/**
+ * Importing image from Assets directory for the sign in icon
+ */
 import signinImage from '../assets/signup.jpg'
 
+/**
+ * Initializaing a new instance of Cookies
+ */
 const cookies = new Cookies()
 
+/**
+ * Initial State of the sign up form
+ */
 const initialState = {
     fullName: '',
     username: '',
@@ -15,6 +27,11 @@ const initialState = {
     avatarURL: '',
 }
 
+/**
+ * Main logic behind authentication for the entirety of AvoChat
+ * By default it will show the Sign up page, but clicking the Sign in icon will dynamically update the page to login 
+ * Also, it saves login information in a cookie so that in the next instance of AvoChat, it will automatically show the login page
+ */
 const Auth = () => {
   const [form, setForm] = useState(initialState)
   const [isSignup, setIsSignup] = useState(true)

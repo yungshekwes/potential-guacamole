@@ -1,3 +1,7 @@
+/**
+ * This index.js exists so that it is easy to import files from the Components directory
+ * We can call upon the different components like importing them from a package
+ */
 export { default as ChannelContainer } from './ChannelContainer'
 export { default as ChannelListContainer } from './ChannelListContainer'
 export { default as ChannelSearch } from './ChannelSearch'

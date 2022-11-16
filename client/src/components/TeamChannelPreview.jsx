@@ -1,6 +1,13 @@
+/**
+ * Imports from packages that will be used in the file
+ */
 import React from 'react'
 import {Avatar, useChatContext} from 'stream-chat-react'
 
+/**
+ * Implements the logic behind the preview component for Channels that shows a user their active Channels.
+ * In the case where there are no active Team or Direct Message Channels, the component displays a default message.
+ */
 const TeamChannelPreview = ({setActiveChannel, setIsCreating, setIsEditing, setToggle, channel, type}) => {
   const {channel : activeChannel, client} = useChatContext()
 

@@ -1,3 +1,6 @@
+/**
+ * Overall CSS Stylization file for the entirety of the AvoChat frontend application.
+ */
 :root {
     --primary-color: #07a61a;
     --primary-color-alpha: #005fff1a;

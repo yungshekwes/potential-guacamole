@@ -1,9 +1,24 @@
-import React, {useState} from 'react'
-import {useChatContext} from 'stream-chat-react'
+/**
+ * Imports from packages that will be used in the file
+ */
+import React, { useState } from 'react'
+import { useChatContext } from 'stream-chat-react'
 
-import {UserList} from './'
-import {CloseCreateChannel} from '../assets'
+/**
+ * Import from the Components directory that will be used in the Create Channel component
+ */
+import { UserList } from './'
 
+/**
+ * Importing components from Assets directory for the stylization of the Closing Icon for Creating Channels
+ */
+import { CloseCreateChannel } from '../assets'
+
+/**
+ * Component that implements logic for accepting the input of a Channel Name
+ * This will be used in the Create Channel component below
+ * Exactly the same as that in the CreateChannel.jsx file
+ */
 const ChannelNameInput = ({channelName = '', setChannelName}) => {
   const handleChange = (e) => {
     e.preventDefault()
@@ -19,6 +34,11 @@ const ChannelNameInput = ({channelName = '', setChannelName}) => {
   )
 }
 
+/**
+ * Actual implementation of the Create Channel logic that creates a new channel given selected users, along with an optional channel name.
+ * If the name of the Team Channel is not specified, getStream would provide a randomized name that corresponds to the ID of that channel in
+ * the getStream databases.
+ */
 const CreateChannel = ({createType, setIsCreating}) => {
   const {client, setActiveChannel} = useChatContext()
   const [selectedUsers, setSelectedUsers] = useState([client.userID || ''])

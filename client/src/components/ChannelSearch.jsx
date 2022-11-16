@@ -1,9 +1,23 @@
+/**
+ * Imports from packages that will be used in the file
+ */
 import React, {useState, useEffect} from 'react'
 import {useChatContext} from 'stream-chat-react'
 
+/**
+ * Import from the Components directory that will be used in the Channel Search component
+ */
 import {ResultsDropdown} from './'
+
+/**
+ * Importing components from Assets directory for the stylization of the Search Icon
+ */
 import {SearchIcon} from '../assets'
 
+/**
+ * Implements the main logic behind the Search component in AvoChat that allows users to both search
+ * for Direct Message Channels and Team Channels, given a search parameter
+ */
 const ChannelSearch = ({setToggle}) => {
   const {client, setActiveChannel} = useChatContext()
   const [query, setQuery] = useState('')

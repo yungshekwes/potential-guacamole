@@ -1,10 +1,24 @@
+/**
+ * Imports from packages that will be used in the file
+ */
 import React, { useState } from 'react';
 import { MessageList, MessageInput, Thread, Window, useChannelActionContext, Avatar, useChannelStateContext, useChatContext } from 'stream-chat-react';
 
+/**
+ * Importing Channel Info component from Assets directory for the stylization of Channel Information
+ */
 import { ChannelInfo } from '../assets';
 
+/**
+ * Creating a React context that allows the Giphy context to be shared "globally" through the other React components
+ * that are being used in AvoChat
+ */
 export const GiphyContext = React.createContext({});
 
+/**
+ * Main logic behind the Channel Inner component that displays messages inside the Channel Container component
+ * This is the same for both Direct Messages and for Team Messages
+ */
 const ChannelInner = ({ setIsEditing }) => {
   const [giphyState, setGiphyState] = useState(false);
   const { sendMessage } = useChannelActionContext();
@@ -42,6 +56,11 @@ const ChannelInner = ({ setIsEditing }) => {
   );
 };
 
+/**
+ * Logic behind the Channel Header that displays the count of online users in any selected Team Channel
+ * Also works for Direct Messages, although it is pretty redundant since in Direct Messages, you have at most
+ * 2 users online simultaneously.
+ */
 const TeamChannelHeader = ({ setIsEditing }) => {
     const { channel, watcher_count } = useChannelStateContext();
     const { client } = useChatContext();
