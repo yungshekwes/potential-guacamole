@@ -92,4 +92,15 @@ There is definitely a downside to this form of commenting as it does not explici
 
 ## Licensing
 
-We decided that the entirety of AvoChat should be open-sourced, and allow for unlimited distribution and 
+We decided that the entirety of AvoChat should be open-sourced, and allow for unlimited distribution and usage by anyone on the Internet. This is because we recognize that it is a University project and also that this was built heavily through the usage of tutorials that were also open-sourced and made available to all. We think that simply putting it together does not entitle us to any rights from it (this is our interpretation). Therefore, we made use of the MIT license, which is showcased in our codebase, and also in this repository.
+
+We are also not looking for any commerical gain, which further substantiates our choice of using the MIT license. As far as the compatibility of the MIT license with the tools that we have made use of, we find it still valid, as we are only licensing the distribution and usage of our codebase, and not that of the tools we are using. Additionally, the tools that we have made use of are not particularly open-source, and only allow for free usage for development purposes. 
+
+In this regard, we find it important to include the terms of use of the tools that we have used as well, as a safety measure to insulate us from any legal issues. These are as follow:
+
+### [getStream Terms of Use](https://getstream.io/legal/)
+
+### [Heroku Terms of Use](https://www.heroku.com/policy/aup)
+
+### [Netlify Terms of Use](https://www.netlify.com/legal/terms-of-use/)
+
