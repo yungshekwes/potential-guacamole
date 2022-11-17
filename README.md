@@ -108,9 +108,8 @@ In this regard, we find it important to include the terms of use of the tools th
 
 Throughout this project, a major challenge we faced was the fact that there were some already deprecated components from the getStream package that were removed in the new version of getStream that caused quite a few problems in terms of the functionality of the AvoChat app. Namely, the actual chat interface has quite a few flaws which noticed immediately upon usage. The following are the flaws:
 
-1. Upon creation of a new Channel, be it Team or Direct Message, there is no default message that states "This is the beginning of your chat history. Send messages, attachments, links, emojis and more!".
-2. The Profile Pictures of recipient users do not display. Instead, a simple blue circle is displayed, which can be rather confusing.
-3. The names of recipient users are displayed, however in very small text, that is a little problematic, when combined with flaw 2.
+1. The Profile Pictures of recipient users do not display. Instead, a simple blue circle is displayed, which can be rather confusing.
+2. The names of recipient users are displayed, however in very small text, that is a little problematic, when combined with flaw 1.
 
 Additionally, the stylization of the Channel List Container (section where the Team Channels and Direct Message Channels) is impacted as well due to the removal of deprecated components from the getStream package. The containers display a rather poorly stylized display of "You have no Channels". This is fortunately not the worst flaw, since it's purely on stylization, rather than functionality. 
 
